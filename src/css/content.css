@@ -1,0 +1,16 @@
+.no-html {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.no-html-out {
+    position: relative;
+}
+
+.no-html-raw {
+    visibility: hidden;
+}

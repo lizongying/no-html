@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "No html",
+  "version": "0.0.2",
+  "description": "textarea內容裏的html標簽會被解析，顯示本來的樣式",
+  "browser_action": {
+    "default_title": "No html"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
+  "permissions": [
+    "http://www.oneniceapp.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.oneniceapp.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
